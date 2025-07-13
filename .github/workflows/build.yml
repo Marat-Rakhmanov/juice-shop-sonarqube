@@ -17,5 +17,5 @@ jobs:
 
       - uses: SonarSource/sonarqube-scan-action@v5
         env:
-          SONAR_TOKEN: sqp_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
-          SONAR_HOST_URL: https://sonarcloud.io
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
